@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title> Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js"></script> 
+</head>
+<body>
+	<table>
+		<div >
+		<table id="calculator">
+			<tr>
+				<td colspan="3"><input type="text" id="rezultat"/></td>
+				<td><input type="button" value="/" onclick="calzuleaza('/')"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="1" onclick="calzuleaza('1')"/> </td>
+				<td><input type="button" value="2" onclick="calzuleaza('2')"/> </td>
+				<td><input type="button" value="3" onclick="calzuleaza('3')"/> </td>
+				<td><input type="button" value="+" onclick="calzuleaza('+')"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="4" onclick="calzuleaza('4')"/> </td>
+				<td><input type="button" value="5" onclick="calzuleaza('5')"/> </td>
+				<td><input type="button" value="6" onclick="calzuleaza('6')"/> </td>
+				<td><input type="button" value="-" onclick="calzuleaza('-')"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="7" onclick="calzuleaza('7')"/> </td>
+				<td><input type="button" value="8" onclick="calzuleaza('8')"/> </td>
+				<td><input type="button" value="9" onclick="calzuleaza('9')"/> </td>
+				<td><input type="button" value="*" onclick="calzuleaza('*')"/> </td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="." onclick="calzuleaza('.')"/> </td>
+				<td><input type="button" value="0" onclick="calzuleaza('0')"/> </td>
+				<td><input type="button" value="=" onclick="rezolva()"/> </td>
+				<td><input type="button" value="c" onclick="golire()"/> </td>
+			</tr>
+
+	</table>
+</div>
+
+<div>
+<br><br>
+Lungimea istoricului de operatii: <input id="iteratii" type="number" min="1" value="3"/>
+<button onclick="onUpdate()"> Update </button>
+</div>
+
+<div>
+<ul id="rezultate"> 
+	
+</ul>
+</div>
+
+</body>
+</html>
